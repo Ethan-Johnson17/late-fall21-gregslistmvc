@@ -14106,4 +14106,8 @@ main {
   height: 1em;
 }
 
+img {
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=main.css.map */
