@@ -1,5 +1,6 @@
 import { Car } from "./Models/Car.js"
 import { House } from "./Models/house.js"
+import { Job } from "./Models/job.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 
@@ -16,6 +17,13 @@ class AppState extends EventEmitter {
     new House({ address: '123 Main St', year: 2012, size: '2300sq.ft.', rooms: 4, price: 5000, imgUrl: 'https://www.trbimg.com/img-58b9aad9/turbine/ct-lament-of-owning-old-house--balancing-0303-20170303' }),
     new House({ address: '234 2nd St', year: 872, size: '19000sq.ft.', rooms: 600, price: 10000000, imgUrl: 'https://www.wheretraveler.com/sites/default/files/images/warwick-castle-caesars-tower.jpg' }),
     new House({ address: '321 3rd St Rd', year: 2000, size: '1900sq.ft.', rooms: 2, price: 300000, imgUrl: 'http://architecturerestoration.com/wp-content/uploads/2017/12/Fine_old_house_Childswickham_-_geograph.org_.uk_-_1720347.jpg' }),
+  ]
+
+  /**@type {Job[]} */
+  jobs = [
+    new Job({ title: 'Web Designer', pay: 100, description: 'You can design websites', imgUrl: 'https://cdn.designbump.com/wp-content/uploads/2021/01/quench-responsive-web-design-laptop-mockup.2.jpg' }),
+    new Job({ title: 'Exterminator', pay: 90, description: 'You can kill bugs', imgUrl: 'https://fanart.tv/fanart/movies/37835/moviethumb/the-exterminator-526f786eb9c86.jpg' }),
+    new Job({ title: 'Butler', pay: 100, description: 'You can butler', imgUrl: 'http://i1.cdnds.net/14/08/618x484/ustv-joseph-marcell-geoffrey-the-butler-fresh-prince-of-bel-air.jpg' }),
   ]
 }
 
